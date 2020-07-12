@@ -109,7 +109,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_LOWER] = LAYOUT_planck_grid(
     KC_GRAVE, KC_1, KC_2,   KC_3, KC_4,  KC_5, KC_6, KC_7,    KC_8,    KC_9, KC_0, KC_DELETE,
-    _______,  _______,   _______,   _______,   _______,   _______,   _______,   _______,    LALT(KC_LBRACKET),    LALT(KC_RBRACKET), KC_DOUBLE_QUOTE, _______,
+    _______,  _______,   _______,   _______,   _______,   _______,   _______,   LALT(KC_MINUS),    LALT(KC_LBRACKET),    LALT(KC_RBRACKET), KC_DOUBLE_QUOTE, _______,
     _______, KC_3,   _______,   _______,   _______,  _______,  _______,  KC_EQUAL, KC_LBRACKET, KC_RBRACKET, KC_PGUP,  KC_DOT,
     KC_AT, _______, _______, _______, _______, _______, _______, KC_HASH,    KC_PLUS,    LALT(KC_LEFT), KC_PGDOWN, LALT(KC_RIGHT)
 ),
@@ -127,9 +127,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_RAISE] = LAYOUT_planck_grid(
     KC_GRV,  _______,    _______,    LCTL(KC_UP),    LCTL(KC_3),    _______,    _______,    _______,    _______,    _______,    KC_MUTE,    _______,
-    _______,  _______,   _______,   _______,   _______,   _______,   _______,   _______, LSFT(LALT(KC_LBRACKET)),  LSFT(LALT(KC_RBRACKET)), _______, _______,
+    _______,  _______,   _______,   _______,   _______,   _______,   _______,   LSFT(LALT(KC_MINUS)), LSFT(LALT(KC_LBRACKET)),  LSFT(LALT(KC_RBRACKET)), _______, _______,
     _______, KC_4,   _______,   _______,   _______,  KC_PERCENT,  KC_CIRCUMFLEX,  KC_AMPERSAND, KC_LEFT_CURLY_BRACE, KC_RIGHT_CURLY_BRACE, KC_HOME, KC_COLON,
-    LALT(KC_SCOLON), _______, _______, _______, KC_DOLLAR, _______, _______, _______, KC_ASTERISK, KC_WWW_BACK, KC_END, KC_WWW_FORWARD
+    LALT(KC_SCOLON), _______, _______, _______, KC_DOLLAR, _______, _______, _______, KC_ASTERISK, LGUI(KC_LBRACKET), KC_END, LGUI(KC_RBRACKET)
 ),
 
 /* Plover layer (http://opensteno.org)
@@ -145,7 +145,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  */
 [_PLOVER] = LAYOUT_planck_grid(
     _______,    KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,    _______   ,
-    _______, KC_F11,    KC_F12,    _______,    _______,    _______,    _______,    _______,    _______,    LCTL(LGUI(KC_Q)),    KC_BSLASH,    _______,
+    _______, KC_F11,    KC_F12,    _______,    _______,    _______,    _______,    KC_QUESTION,    _______,    LCTL(LGUI(KC_Q)),    KC_BSLASH,    _______,
     _______, RESET,    DEBUG,    _______,    _______,    _______,    _______,    KC_PIPE,    KC_LEFT_ANGLE_BRACKET,    KC_RIGHT_ANGLE_BRACKET,    _______, KC_SCOLON,
     _______, _______, _______, _______,    KC_TILDE,    _______, _______, KC_EXCLAIM,    KC_SLASH,    KC_MEDIA_PREV_TRACK, KC_MEDIA_PLAY_PAUSE, KC_MEDIA_NEXT_TRACK
 ),
