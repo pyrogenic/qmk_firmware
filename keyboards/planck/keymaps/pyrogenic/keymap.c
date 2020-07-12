@@ -129,7 +129,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     KC_GRV,  _______,    _______,    LCTL(KC_UP),    LCTL(KC_3),    _______,    _______,    _______,    _______,    _______,    KC_MUTE,    _______,
     _______,  _______,   _______,   _______,   _______,   _______,   _______,   _______, LSFT(LALT(KC_LBRACKET)),  LSFT(LALT(KC_RBRACKET)), _______, _______,
     _______, KC_4,   _______,   _______,   _______,  KC_PERCENT,  KC_CIRCUMFLEX,  KC_AMPERSAND, KC_LEFT_CURLY_BRACE, KC_RIGHT_CURLY_BRACE, KC_HOME, KC_COLON,
-    LALT(KC_SCOLON), _______, _______, _______, KC_DOLLAR, _______, _______, _______, KC_ASTERISK, LGUI(KC_LEFT), KC_END, LGUI(KC_RIGHT)
+    LALT(KC_SCOLON), _______, _______, _______, KC_DOLLAR, _______, _______, _______, KC_ASTERISK, KC_WWW_BACK, KC_END, KC_WWW_FORWARD
 ),
 
 /* Plover layer (http://opensteno.org)
@@ -144,10 +144,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_PLOVER] = LAYOUT_planck_grid(
-    KC_1,    KC_1,    KC_1,    KC_1,    KC_1,    KC_1,    KC_1,    KC_1,    KC_1,    KC_1,    KC_1,    KC_1   ,
-    XXXXXXX, KC_Q,    KC_W,    KC_E,    KC_R,    KC_T,    KC_Y,    KC_U,    KC_I,    KC_O,    KC_P,    KC_LBRC,
-    XXXXXXX, KC_5,    KC_S,    KC_D,    KC_F,    KC_G,    KC_H,    KC_J,    KC_K,    KC_L,    KC_SCLN, KC_QUOT,
-    _______, XXXXXXX, XXXXXXX, KC_C,    KC_V,    XXXXXXX, XXXXXXX, KC_N,    KC_M,    XXXXXXX, XXXXXXX, XXXXXXX
+    _______,    KC_F1,    KC_F2,    KC_F3,    KC_F4,    KC_F5,    KC_F6,    KC_F7,    KC_F8,    KC_F9,    KC_F10,    _______   ,
+    _______, KC_F11,    KC_F12,    _______,    _______,    _______,    _______,    _______,    _______,    LCTL(LGUI(KC_Q)),    KC_BSLASH,    _______,
+    _______, RESET,    DEBUG,    _______,    _______,    _______,    _______,    KC_PIPE,    KC_LEFT_ANGLE_BRACKET,    KC_RIGHT_ANGLE_BRACKET,    _______, KC_SCOLON,
+    _______, _______, _______, _______,    KC_TILDE,    _______, _______, KC_EXCLAIM,    KC_SLASH,    KC_MEDIA_PREV_TRACK, KC_MEDIA_PLAY_PAUSE, KC_MEDIA_NEXT_TRACK
 ),
 
 /* Adjust (Lower + Raise)
