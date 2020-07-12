@@ -108,7 +108,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_LOWER] = LAYOUT_planck_grid(
-    _______, KC_1, KC_2,   KC_3, KC_4,  KC_5, KC_6, KC_7,    KC_8,    KC_9, KC_0, KC_DELETE,
+    KC_GRAVE, KC_1, KC_2,   KC_3, KC_4,  KC_5, KC_6, KC_7,    KC_8,    KC_9, KC_0, KC_DELETE,
     _______,  _______,   _______,   _______,   _______,   _______,   _______,   _______,    LALT(KC_LBRACKET),    LALT(KC_RBRACKET), KC_DOUBLE_QUOTE, _______,
     _______, KC_3,   _______,   _______,   _______,  _______,  _______,  KC_EQUAL, KC_LBRACKET, KC_RBRACKET, KC_PGUP,  KC_DOT,
     KC_AT, _______, _______, _______, _______, _______, _______, KC_HASH,    KC_PLUS,    LALT(KC_LEFT), KC_PGDOWN, LALT(KC_RIGHT)
@@ -126,10 +126,10 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
  * `-----------------------------------------------------------------------------------'
  */
 [_RAISE] = LAYOUT_planck_grid(
-    KC_GRV,  KC_1,    KC_2,    KC_3,    KC_4,    KC_5,    KC_6,    KC_7,    KC_8,    KC_9,    KC_0,    KC_BSPC,
-    KC_DEL,  KC_F1,   KC_F2,   KC_F3,   KC_F4,   KC_F5,   KC_F6,   KC_MINS, KC_EQL,  KC_LBRC, KC_RBRC, KC_BSLS,
-    _______, KC_4,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,  KC_NUHS, KC_NUBS, KC_PGUP, KC_PGDN, _______,
-    _______, _______, _______, _______, _______, _______, _______, _______, KC_MNXT, KC_VOLD, KC_VOLU, KC_MPLY
+    KC_GRV,  _______,    _______,    LCTL(KC_UP),    LCTL(KC_3),    _______,    _______,    _______,    _______,    _______,    KC_MUTE,    _______,
+    _______,  _______,   _______,   _______,   _______,   _______,   _______,   _______, LSFT(LALT(KC_LBRACKET)),  LSFT(LALT(KC_RBRACKET)), _______, _______,
+    _______, KC_4,   _______,   _______,   _______,  KC_PERCENT,  KC_CIRCUMFLEX,  KC_AMPERSAND, KC_LEFT_CURLY_BRACE, KC_RIGHT_CURLY_BRACE, KC_HOME, KC_COLON,
+    LALT(KC_SCOLON), _______, _______, _______, KC_DOLLAR, _______, _______, _______, KC_ASTERISK, LGUI(KC_LEFT), KC_END, LGUI(KC_RIGHT)
 ),
 
 /* Plover layer (http://opensteno.org)
