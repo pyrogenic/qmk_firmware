@@ -1,1 +1,1 @@
-# The default keymap for bm43a
+# pyrogenic's keymap for the bm43a
