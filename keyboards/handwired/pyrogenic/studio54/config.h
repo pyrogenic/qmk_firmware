@@ -26,7 +26,7 @@
 #define DIODE_DIRECTION COL2ROW
 
 /* number of backlight levels */
-#define BACKLIGHT_PIN C6
+//#define BACKLIGHT_PIN C6
 #ifdef BACKLIGHT_PIN
 #define BACKLIGHT_LEVELS 3
 #endif
